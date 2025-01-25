@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<style>
+		:root{
+			--main-BG: url(img/home/carbide-rods-banner.png);
+		}
+		@media (max-width : 1160px) {
+			:root{
+				--main-BG: url(img/home/carbide-rods-banner-tab.png);
+			}
+		}
+		@media (max-width : 715px) {
+			:root{
+				--main-BG: url(img/home/carbide-rods-banner-mob.png);
+			}
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<!-- страница отдельной категории товаров -->
+	<div class="page--wrapper">
+		<header class="header">
+			<div class="header--wrapper">
+				<div class="header--top">
+					<div class="container">
+						<div class="row">
+							<div class="header--top__wrapper">
+								<div class="header--top__left">
+									<a href="index.html" class="logo"><img src="img/logo.svg" alt="#"></a>
+									<nav class="menu">
+										<ul class="list">
+											<li><a href="index.html">Home</a></li>
+											<li class="current-menu-item"><a href="products.html">Products</a></li>
+											<li><a href="about.html">About Us</a></li>
+											<li><a href="contacts.html">Contact Us</a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="header--top__right">
+									<ul class="social">
+										<li>
+											<a href="mailto:info@elheater.com" target="_blank">
+												<svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none">
+													<path d="M1 1L11.4247 8L21 1.2294M2.00402 1H19.996C20.5505 1 21 1.37552 21 1.83874V15.1613C21 15.6245 20.5505 16 19.996 16H2.00402C1.44951 16 1 15.6245 1 15.1613V1.83874C1 1.37552 1.44951 1 2.00402 1Z" stroke="#FF6813" stroke-width="2"/>
+												</svg>
+												<span>info@elheater.com</span>
+											</a>
+										</li>
+										<li>
+											<a href="tel:+380970080700" target="_blank">
+												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+													<path d="M1.97405 1.14082C1.83945 1.14492 1.70709 1.17427 1.58481 1.22715C1.46253 1.28003 1.35282 1.35536 1.26217 1.44867C1.17153 1.54199 1.10179 1.65139 1.05708 1.77041C1.01238 1.88943 0.993616 2.01564 1.00191 2.14157C1.1364 4.30147 1.7704 9.57161 4.80595 12.8583C8.44092 16.8181 13.1748 18.1824 18.0317 17.9808C18.292 17.9662 18.5368 17.8596 18.7165 17.6826C18.8962 17.5055 18.9975 17.2712 19 17.0268V13.5674C18.997 13.2446 18.8783 12.9322 18.663 12.6802C18.4476 12.4282 18.1482 12.2513 17.8127 12.1779L15.3804 11.6739C15.0796 11.6138 14.7664 11.6397 14.4815 11.7481C14.1965 11.8566 13.9528 12.0427 13.7819 12.2823L13.244 13.0454C13.1946 13.1153 13.1208 13.1668 13.0352 13.1911C12.9496 13.2154 12.8577 13.211 12.7752 13.1786C11.5379 12.6783 6.60806 10.5184 6.06628 6.87534C6.05566 6.80498 6.06751 6.73326 6.10034 6.6692C6.13316 6.60514 6.18548 6.55161 6.25071 6.51536L7.2267 5.95739C7.4944 5.80196 7.70467 5.57324 7.82906 5.30218C7.95345 5.03112 7.98596 4.7308 7.92218 4.44186L7.38808 2.12358C7.31 1.79875 7.11418 1.50932 6.83395 1.30454C6.55371 1.09976 6.20639 0.992295 5.8511 1.00043L1.97405 1.14082Z" stroke="#FF6813" stroke-width="2"/>
+												</svg>
+												<span>+380 97 008 07 00</span>
+											</a>
+										</li>
+									</ul>
+									<ul class="header--top__language">
+										<li class="current-lang"><a href="#"><img src="img/lang/GB.png" alt="English"></a></li>
+										<ul class="dropdown-menu">
+											<li class="lang-item">
+												<a href="#"><img src="img/lang/DE.png" alt="Deutsch"></a>
+											</li>
+										</ul>
+									</ul>
+									<button class="menu--burger" title="Menu">
+										<div class="menu--burger__wrapper">
+											<span></span><span></span><span></span>
+										</div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header--bottom">
+					<div class="container">
+						<div class="row">
+							<div class="header--bottom__wrapper">
+								<form role="search" method="get" id="searchform" class="search search--block" action="#">
+									<input class="search-field" type="search" name="s" value="" placeholder="Search">
+									<input class="search-submit" type="submit" id="searchsubmit" value="">
+								</form>
+								<nav class="menu">
+									<ul class="catalog">
+										<li class="current-menu-item"><a href="products-type.html">Sic heating elements</a></li>
+										<li><a href="products-type.html">Mosi2 heating elements</a></li>
+										<li><a href="products-type.html">Smart Watches</a></li>
+										<li><a href="products-type.html">Molybdenum&Tungsten</a></li>
+										<li><a href="products-type.html">Crucible</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main products inner">
+			<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+				<div class="container">
+					<div class="row">
+						<div class="breadcrumbs--wrapper">
+							<!-- Breadcrumb NavXT 7.3.1 -->
+							<span property="itemListElement" typeof="ListItem">
+								<a property="item" typeof="WebPage" title="Go to Home." href="index.html" class="home"><span property="name">Home</span></a>
+								<meta property="position" content="1">
+							</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M9 6L15 12L9 18" stroke="#666C89"/>
+							</svg>
+							<span property="itemListElement" typeof="ListItem">
+								<a property="item" typeof="WebPage" title="Go to Catalog." href="products.html" class="home"><span property="name">Catalog</span></a>
+								<meta property="position" content="1">
+							</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M9 6L15 12L9 18" stroke="#666C89"/>
+							</svg>
+							<span property="itemListElement" typeof="ListItem"><span property="name" class="archive post-product-archive current-item breadcrumb_last">Sic heating elements</span>
+								<meta property="url" content="https://optitechno.com/products/">
+								<meta property="position" content="2">
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="products--catalog section">
+				<div class="container">
+					<div class="row">
+						<div class="products--catalog__block">
+							<div class="products--catalog__info">
+								<div class="products--catalog__left">
+									<h2 class="h2">Sic heating elements</h2>
+									<p class="text-18 text-blue">
+										Silicon carbide heating elements are designed for use in high-temperature furnaces, operating up to 1,600°C (2,910°F).
+										These elements are available in both single-rod and multi-leg designs, providing installation flexibility. Globar® SD
+										elements are widely used in industries such as glass, ceramics, electronics, and metals due to their durability, easy
+										installation, and cost-effectiveness.  
+									</p>
+								</div>
+								<div class="products--catalog__right">
+									<img src="img/products/info-image.png" alt="#">
+								</div>
+							</div>
+							<div class="products--catalog__list">
+								<a href="products-page.html" class="products--catalog__item">
+									<div class="image">
+										<img src="img/products/product1/pro-example.png" alt="#">
+									</div>
+									<div class="title">Silicon carbide rods</div>
+								</a>
+								<a href="products-page.html" class="products--catalog__item">
+									<div class="image">
+										<img src="img/products/product1/DSC_3707-1.png" alt="#">
+									</div>
+									<div class="title">Accessory</div>
+								</a>
+								<a href="products-page.html" class="products--catalog__item">
+									<div class="image">
+										<img src="img/products/product1/H-1 1.png" alt="#">
+									</div>
+									<div class="title">Molybdenum&Tungsten</div>
+								</a>
+								<a href="products-page.html" class="products--catalog__item">
+									<div class="image">
+										<img src="img/products/product1/DSC_3734-1 1.png" alt="#">
+									</div>
+									<div class="title">Silicon carbide rods other types</div>
+								</a>
+								<a href="products-page.html" class="products--catalog__item">
+									<div class="image">
+										<img src="img/products/product1/DSC_3733-1 1.png" alt="#">
+									</div>
+									<div class="title">Silicon carbide rods SCR (double spiral) type</div>
+								</a>
+								<a href="products-page.html" class="products--catalog__item">
+									<div class="image">
+										<img src="img/products/product1/DSC_3735-1 1.png" alt="#">
+									</div>
+									<div class="title">Silicon carbide rods SC (single spiral) type</div>
+								</a>
+								<a href="products-page.html" class="products--catalog__item">
+									<div class="image">
+										<img src="img/products/product1/W-1 1.png" alt="#">
+									</div>
+									<div class="title">Silicon carbide rods W type</div>
+								</a>
+								<a href="products-page.html" class="products--catalog__item">
+									<div class="image">
+										<img src="img/products/product1/DSC_3730-1 1.png" alt="#">
+									</div>
+									<div class="title">Silicon carbide rods U type</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="main--banner section">
+				<div class="main--banner__image image-1" style="background-image: url(img/banners/260A7548-1.png);"></div>
+				<div class="main--banner__image image-2" style="background-image: url(img/banners/260A7571-2.png);"></div>
+				<div class="main--banner__image image-3" style="background-image: url(img/banners/3.png);"></div>
+				<div class="container">
+					<div class="row">
+						<div class="main--banner__text">
+							<h2 class="h1 text-accent">Didn't find what you were looking for?</h2>
+							<span>We can produce parts according to your request</span>
+							<a href="#contact" class="button">Сontact Us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="main--form section">
+				<div class="container">
+					<div class="row">
+						<div class="main--form__wrapper">
+							<div class="main--form__left">
+								<h2 class="h2 text-lightgray">Get In Touch</h2>
+								<span class="subtitle">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> 
+									eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+									Nor again is there anyone who loves
+								</span>
+								<ul class="main--form__social">
+									<li>
+										<a href="mailto:info@elheater.com" target="_blank">
+											<div class="icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0 3C0 1.34315 1.34315 0 3 0H19C20.6569 0 22 1.34315 22 3V13C22 14.6569 20.6569 16 19 16H3C1.34315 16 0 14.6569 0 13V3ZM3 2C2.44772 2 2 2.44772 2 3V13C2 13.5523 2.44772 14 3 14H19C19.5523 14 20 13.5523 20 13V3C20 2.44772 19.5523 2 19 2H3Z" fill="#FF6813"/>
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M21.0007 2.42795L20.6902 2.72408C20.6573 2.7554 20.6224 2.78444 20.5856 2.81102L11.5856 9.31102C11.2361 9.56344 10.7641 9.56344 10.4146 9.31102L1.41461 2.81102C1.35901 2.77086 1.3077 2.7251 1.26147 2.67444L0.991211 2.37832L2.46848 1.0301L2.66921 1.25005L11.0001 7.2668L19.3594 1.22956L19.6206 0.980469L21.0007 2.42795Z" fill="#FF6813"/>
+												</svg>
+											</div>
+											<div class="link">
+												<b>Email</b>
+												<span>info@elheater.com</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="tel:+380970080700" target="_blank">
+											<div class="icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M4.45786 2.0472C4.39492 1.98427 4.29288 1.98427 4.22994 2.0472L2.83879 3.43835C1.99481 4.28233 1.76289 5.5613 2.25679 6.64788C4.08935 10.6795 7.32052 13.9107 11.3521 15.7432C12.4387 16.2371 13.7177 16.0052 14.5617 15.1612L15.9528 13.7701C16.0158 13.7072 16.0158 13.6051 15.9528 13.5422L14.0814 11.6708C14.0324 11.6217 13.9574 11.6095 13.8954 11.6406L12.8568 12.1599C11.5777 12.7994 10.0329 12.5487 9.02176 11.5375L6.46252 8.97827C5.45133 7.96709 5.20064 6.42229 5.84018 5.14323L6.35947 4.10466C6.39049 4.04261 6.37833 3.96767 6.32928 3.91862L4.45786 2.0472ZM2.81572 0.632991C3.65971 -0.210997 5.02809 -0.210997 5.87208 0.632991L7.74349 2.5044C8.40126 3.16218 8.56433 4.16706 8.14832 4.99908L7.62903 6.03766C7.37449 6.54674 7.47426 7.16159 7.87673 7.56406L10.436 10.1233C10.8384 10.5258 11.4533 10.6255 11.9624 10.371L13.0009 9.85171C13.833 9.4357 14.8379 9.59877 15.4956 10.2565L17.367 12.128C18.211 12.9719 18.211 14.3403 17.367 15.1843L15.9759 16.5755C14.5424 18.0089 12.3701 18.4029 10.5245 17.564C6.0527 15.5313 2.46871 11.9473 0.436058 7.47549C-0.402825 5.62995 -0.00890672 3.45762 1.42457 2.02414L2.81572 0.632991Z" fill="#FF6813"/>
+												</svg>
+											</div>
+											<div class="link">
+												<b>Phone</b>
+												<span>+380 97 008 07 00</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="https://maps.app.goo.gl/TEEHuLNFbs8bk7RZ9" target="_blank">
+											<div class="icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M3.73062 3.52893C2.68822 4.49664 2 5.95275 2 7.92763C2 9.21658 2.76018 10.8912 3.91015 12.6267C5.03167 14.3192 6.4086 15.9015 7.40541 16.9671C7.73561 17.32 8.26439 17.32 8.59459 16.9671C9.5914 15.9015 10.9683 14.3192 12.0898 12.6267C13.2398 10.8912 14 9.21658 14 7.92763C14 5.95275 13.3118 4.49664 12.2694 3.52893C11.2159 2.55098 9.72218 2 8 2C6.27782 2 4.78405 2.55098 3.73062 3.52893ZM2.36989 2.06319C3.84995 0.689167 5.85619 0 8 0C10.1438 0 12.15 0.689167 13.6301 2.06319C15.1212 3.44746 16 5.45517 16 7.92763C16 9.84825 14.9373 11.9503 13.757 13.7314C12.5483 15.5555 11.0877 17.2297 10.0551 18.3334C8.93451 19.5313 7.06548 19.5313 5.94488 18.3334C4.91232 17.2297 3.45167 15.5555 2.24296 13.7314C1.06271 11.9503 0 9.84825 0 7.92763C0 5.45517 0.878779 3.44746 2.36989 2.06319Z" fill="#FF6813"/>
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M8 5C6.89543 5 6 5.89543 6 7C6 8.10457 6.89543 9 8 9C9.10457 9 10 8.10457 10 7C10 5.89543 9.10457 5 8 5ZM4 7C4 4.79086 5.79086 3 8 3C10.2091 3 12 4.79086 12 7C12 9.20914 10.2091 11 8 11C5.79086 11 4 9.20914 4 7Z" fill="#FF6813"/>
+												</svg>
+											</div>
+											<div class="link">
+												<span>Adama Branickiego 15,<br> 02-972 Warsaw</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<div>
+											<div class="icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2ZM0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22C4.92487 22 0 17.0751 0 11Z" fill="#FF6813"/>
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M10.2929 11.7071C10.1054 11.5196 10 11.2652 10 11V4H12V10H18V12H11C10.7348 12 10.4804 11.8946 10.2929 11.7071Z" fill="#FF6813"/>
+												</svg>
+											</div>
+											<div class="link">
+												<span>Mon - Sat 9.00 - 18.00<br> Sunday Closed</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="main--form__right" id="contact">
+								<form action="/#wpcf7-f479-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+									<div style="display: none;">
+										<input type="hidden" name="_wpcf7" value="479">
+										<input type="hidden" name="_wpcf7_version" value="6.0">
+										<input type="hidden" name="_wpcf7_locale" value="en_US">
+										<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f479-o1">
+										<input type="hidden" name="_wpcf7_container_post" value="0">
+										<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+										<input type="hidden" name="_wpcf7_key" value="footer-form-en">
+										<input type="hidden" name="_cf7sg_toggles" value="">
+										<input type="hidden" name="_cf7sg_version" value="4.15.7">
+										<input type="hidden" name="_wpnonce" value="fc7cc9148a">
+										<input type="hidden" name="_wpcf7_lang" value="en">
+									</div>
+									<div class="main--form__block first">
+										<label>Name*</label>
+										<span class="wpcf7-form-control-wrap" data-name="fio"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name" value="" type="text" name="fio"></span>
+									</div>
+									<div class="main--form__block">
+										<label>Email*</label>
+										<span class="wpcf7-form-control-wrap" data-name="email2"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email" value="" type="email" name="email2"></span>
+									</div>
+									<div class="main--form__block">
+										<label>Phone</label>
+										<span class="wpcf7-form-control-wrap" data-name="tel2"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel" aria-invalid="false" placeholder="Your Phone" value="" type="tel" name="tel2"></span>
+									</div>
+									<div class="main--form__block">
+										<label>Message</label>
+										<span class="wpcf7-form-control-wrap" data-name="textarea2"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Your Message" name="textarea2"></textarea></span>
+									</div>
+									<div class="main--form__button">
+										<button class="button button--white wpcf7-form-control wpcf7-submit text-20" type="submit">
+											<span>Send Message</span>
+										</button>
+									</div>
+									<div class="la-sentinelle-container" style="max-height:0;overflow:hidden;">
+										<input value="58" type="text" name="la_sentinelle_c0a911d1ff64a874460aa778faf5c422" class="la_sentinelle_c0a911d1ff64a874460aa778faf5c422" id="la_sentinelle_c0a911d1ff64a874460aa778faf5c422-3" placeholder="" style="transform: translateY(10000px);">
+										<input value="NzcuMjIyLjEyNy44MQ==" type="text" name="la_sentinelle_310e692159a1460c92f7e769ed6f8bad" class="la_sentinelle_310e692159a1460c92f7e769ed6f8bad" id="la_sentinelle_310e692159a1460c92f7e769ed6f8bad-3" placeholder="" style="transform: translateY(10000px);">
+										<input value="58" type="text" name="la_sentinelle_8cda8c08679cbf74f388d33d6cf01df2" class="la_sentinelle_8cda8c08679cbf74f388d33d6cf01df2" id="la_sentinelle_8cda8c08679cbf74f388d33d6cf01df2-3" placeholder="" style="transform: translateY(10000px);">
+										<input value="58" type="text" name="la_sentinelle_f7d9b6dd473594084300b1ea6d766175" class="la_sentinelle_f7d9b6dd473594084300b1ea6d766175" id="la_sentinelle_f7d9b6dd473594084300b1ea6d766175-3" placeholder="" style="transform: translateY(10000px);">
+										<input value="" type="text" name="la_sentinelle_0617a21b2849f2ee0a58dc03e9de8a25" class="la_sentinelle_0617a21b2849f2ee0a58dc03e9de8a25" id="la_sentinelle_0617a21b2849f2ee0a58dc03e9de8a25-3" placeholder="" style="transform: translateY(10000px);">
+										<input value="NzcuMjIyLjEyNy44MQ==" type="text" name="la_sentinelle_3c5101d0457056ecaed0159dbeca086b" class="la_sentinelle_3c5101d0457056ecaed0159dbeca086b" id="la_sentinelle_3c5101d0457056ecaed0159dbeca086b-3" placeholder="" style="transform: translateY(10000px);">
+										<input type="text" class="la_sentinelle_a2fdc8e526e3227f3c63b05252c96ae6" id="la_sentinelle_a2fdc8e526e3227f3c63b05252c96ae6-3" name="la_sentinelle_a2fdc8e526e3227f3c63b05252c96ae6" value="4eeef599d9" style="transform: translateY(10000px);">
+										<input value="" type="text" name="la_sentinelle_806bf15e61325fc9991b3bd3e5bf0b78" class="la_sentinelle_806bf15e61325fc9991b3bd3e5bf0b78" id="la_sentinelle_806bf15e61325fc9991b3bd3e5bf0b78-3" placeholder="" style="transform: translateY(10000px);">
+										<input value="26929" type="text" name="la_sentinelle_bb1609af543c16b5fb79bde47b0fcdff" class="la_sentinelle_bb1609af543c16b5fb79bde47b0fcdff" id="la_sentinelle_bb1609af543c16b5fb79bde47b0fcdff-3" placeholder="" style="transform: translateY(10000px);">
+										<input value="26929" type="text" name="la_sentinelle_3a0505b13a7198fc9965c9180705eb90" class="la_sentinelle_3a0505b13a7198fc9965c9180705eb90" id="la_sentinelle_3a0505b13a7198fc9965c9180705eb90-3" placeholder="" style="transform: translateY(10000px);">
+										<canvas id="canvas-2" width="20" height="20"></canvas></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer--wrapper">
+						<a href="index.html" class="logo"><img src="img/logo-footer.svg" alt="#"></a>
+						<div class="footer--info">
+							<div class="footer--info__text">
+								<span class="text-20">Thermal Equipment</span>
+								<span class="text-14">
+									Elheater supplies a broad range of high-temperature furnaces, including lab, pilot production, and industrial production
+									furnaces, with a temperature range of up to 3000 ℃.
+								</span>
+								<ul class="social social--links">
+									<li>
+										<a href="#" target="_blank">
+											<svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20" fill="none">
+												<path d="M8.7449 3.32002H10.6768V0.14003C9.74142 0.0453769 8.80158 -0.00135428 7.86116 2.98641e-05C5.06608 2.98641e-05 3.15474 1.66003 3.15474 4.70002V7.32002H0V10.88H3.15474V20H6.93632V10.88H10.0808L10.5535 7.32002H6.93632V5.05002C6.93632 4.00002 7.22405 3.32002 8.7449 3.32002Z" fill="white"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+												<path d="M16.4402 3.46C16.1963 3.46 15.9579 3.53038 15.7551 3.66224C15.5523 3.79409 15.3943 3.98151 15.3009 4.20078C15.2076 4.42005 15.1832 4.66133 15.2308 4.89411C15.2784 5.12689 15.3958 5.34071 15.5683 5.50853C15.7407 5.67635 15.9604 5.79064 16.1996 5.83694C16.4388 5.88324 16.6868 5.85948 16.9121 5.76866C17.1374 5.67783 17.33 5.52402 17.4655 5.32668C17.601 5.12935 17.6733 4.89734 17.6733 4.66C17.6733 4.34174 17.5434 4.03652 17.3122 3.81147C17.0809 3.58643 16.7673 3.46 16.4402 3.46ZM21.1672 5.88C21.1472 5.0503 20.9875 4.2294 20.6945 3.45C20.4332 2.78313 20.0265 2.17928 19.5025 1.68C18.9936 1.16743 18.3717 0.774176 17.6836 0.53C16.8848 0.236161 16.0403 0.07721 15.1865 0.0599999C14.0973 -5.58794e-08 13.7479 0 10.9528 0C8.15772 0 7.80833 -5.58794e-08 6.71907 0.0599999C5.86529 0.07721 5.02079 0.236161 4.22199 0.53C3.53522 0.776649 2.91378 1.16956 2.40313 1.68C1.87641 2.17518 1.4723 2.78044 1.22139 3.45C0.919438 4.22734 0.756099 5.04915 0.738414 5.88C0.676758 6.94 0.676758 7.28 0.676758 10C0.676758 12.72 0.676758 13.06 0.738414 14.12C0.756099 14.9508 0.919438 15.7727 1.22139 16.55C1.4723 17.2196 1.87641 17.8248 2.40313 18.32C2.91378 18.8304 3.53522 19.2234 4.22199 19.47C5.02079 19.7638 5.86529 19.9228 6.71907 19.94C7.80833 20 8.15772 20 10.9528 20C13.7479 20 14.0973 20 15.1865 19.94C16.0403 19.9228 16.8848 19.7638 17.6836 19.47C18.3717 19.2258 18.9936 18.8326 19.5025 18.32C20.0288 17.8226 20.4359 17.2182 20.6945 16.55C20.9875 15.7706 21.1472 14.9497 21.1672 14.12C21.1672 13.06 21.2288 12.72 21.2288 10C21.2288 7.28 21.2288 6.94 21.1672 5.88ZM19.3175 14C19.31 14.6348 19.1919 15.2637 18.9681 15.86C18.804 16.2952 18.5405 16.6884 18.1974 17.01C17.8641 17.3405 17.4608 17.5964 17.0157 17.76C16.4029 17.9778 15.7566 18.0927 15.1043 18.1C14.0767 18.15 13.6965 18.16 10.9939 18.16C8.29131 18.16 7.91109 18.16 6.88349 18.1C6.20618 18.1123 5.53177 18.0109 4.88994 17.8C4.46428 17.6281 4.07952 17.3728 3.75957 17.05C3.4185 16.7287 3.15826 16.3352 2.99914 15.9C2.74826 15.2952 2.60911 14.6519 2.5881 14C2.5881 13 2.52645 12.63 2.52645 10C2.52645 7.37 2.52645 7 2.5881 6C2.59271 5.35106 2.71445 4.70795 2.94776 4.1C3.12867 3.67791 3.40635 3.30166 3.75957 3C4.07177 2.65617 4.45761 2.3831 4.88994 2.2C5.51631 1.98004 6.17649 1.86508 6.84238 1.86C7.86999 1.86 8.2502 1.8 10.9528 1.8C13.6554 1.8 14.0356 1.8 15.0632 1.86C15.7155 1.86728 16.3618 1.98225 16.9746 2.2C17.4415 2.36865 17.8607 2.64285 18.1974 3C18.5342 3.30718 18.7973 3.68273 18.9681 4.1C19.1965 4.70893 19.3147 5.35178 19.3175 6C19.3689 7 19.3792 7.37 19.3792 10C19.3792 12.63 19.3689 13 19.3175 14ZM10.9528 4.87C9.91061 4.87198 8.89242 5.17453 8.02686 5.73942C7.1613 6.30431 6.48722 7.1062 6.0898 8.04375C5.69238 8.98131 5.58945 10.0125 5.79402 11.0069C5.99858 12.0014 6.50146 12.9145 7.23912 13.631C7.97677 14.3474 8.9161 14.835 9.93841 15.0321C10.9607 15.2293 12.0201 15.1271 12.9828 14.7385C13.9455 14.35 14.7682 13.6924 15.347 12.849C15.9258 12.0056 16.2347 11.0142 16.2347 10C16.236 9.3251 16.1003 8.65661 15.8352 8.03296C15.5701 7.40931 15.1809 6.84281 14.6901 6.36605C14.1992 5.88929 13.6163 5.51168 12.9749 5.25493C12.3335 4.99818 11.6463 4.86736 10.9528 4.87ZM10.9528 13.33C10.276 13.33 9.61441 13.1347 9.05168 12.7688C8.48895 12.4029 8.05035 11.8828 7.79136 11.2743C7.53236 10.6659 7.46459 9.99631 7.59663 9.35035C7.72866 8.70439 8.05457 8.11104 8.53314 7.64533C9.0117 7.17963 9.62143 6.86247 10.2852 6.73398C10.949 6.6055 11.637 6.67144 12.2623 6.92348C12.8876 7.17552 13.422 7.60234 13.798 8.14995C14.174 8.69757 14.3747 9.34139 14.3747 10C14.3747 10.4373 14.2862 10.8703 14.1142 11.2743C13.9423 11.6784 13.6902 12.0454 13.3725 12.3547C13.0547 12.6639 12.6775 12.9092 12.2623 13.0765C11.8471 13.2439 11.4022 13.33 10.9528 13.33Z" fill="white"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+												<path d="M15.2133 12.01C15.008 11.9101 13.6738 11.3109 13.4685 11.211C13.2633 11.1111 13.058 11.1111 12.8528 11.3109C12.6475 11.5106 12.237 12.1099 12.0317 12.3096C11.9291 12.5094 11.7238 12.5094 11.5185 12.4095C10.8001 12.1099 10.0817 11.7104 9.4659 11.211C8.95273 10.7116 8.43957 10.1124 8.02905 9.51311C7.92641 9.31336 8.02905 9.11361 8.13168 9.01373C8.23431 8.91386 8.33694 8.71411 8.54221 8.61423C8.64484 8.51436 8.74747 8.31461 8.74747 8.21473C8.8501 8.11486 8.8501 7.91511 8.74747 7.81523C8.64484 7.71536 8.13168 6.51685 7.92641 6.01748C7.82378 5.31835 7.61852 5.31835 7.41325 5.31835H6.90009C6.69483 5.31835 6.38693 5.5181 6.2843 5.61798C5.66851 6.21723 5.36061 6.91635 5.36061 7.71536C5.46324 8.61423 5.77114 9.51311 6.38693 10.3121C7.51588 11.9101 8.95273 13.2085 10.6975 14.0075C11.2106 14.2072 11.6212 14.407 12.1343 14.5069C12.6475 14.7066 13.1607 14.7066 13.7764 14.6067C14.4949 14.5069 15.1107 14.0075 15.5212 13.4082C15.7265 13.0087 15.7265 12.6092 15.6238 12.2097L15.2133 12.01ZM17.7791 2.92135C13.7764 -0.973783 7.31062 -0.973783 3.30797 2.92135C0.0237396 6.11735 -0.592053 11.0112 1.66585 14.9064L0.229004 20L5.66851 18.6017C7.20799 19.4007 8.8501 19.8002 10.4922 19.8002C16.137 19.8002 20.6528 15.4057 20.6528 9.91261C20.7554 7.31585 19.6265 4.81898 17.7791 2.92135ZM15.008 16.9039C13.6738 17.7029 12.1343 18.2022 10.4922 18.2022C8.95273 18.2022 7.51589 17.8027 6.18167 17.1036L5.87377 16.9039L2.69218 17.7029L3.51323 14.7066L3.30797 14.407C0.844797 10.412 2.07638 5.41823 6.07904 2.92135C10.0817 0.42447 15.2133 1.72285 17.6765 5.5181C20.1396 9.41323 19.0107 14.5069 15.008 16.9039Z" fill="white"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<nav class="footer--nav">
+								<div class="footer--nav__block">
+									<span class="text-20">Explore</span>
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="products.html">Products</a></li>
+										<li><a href="about.html">About Us</a></li>
+										<li><a href="contacts.html">Contact Us</a></li>
+									</ul>
+								</div>
+								<div class="footer--nav__block">
+									<span class="text-20">Products</span>
+									<ul>
+										<li><a href="products-type.html">Sic heating elements</a></li>
+										<li><a href="products-type.html">Molybdenum&Tungsten</a></li>
+										<li><a href="products-type.html">Crucible</a></li>
+										<li><a href="products-type.html">Mosi2 heating elements</a></li>
+									</ul>
+								</div>
+								<div class="footer--nav__block">
+									<span class="text-20">Help</span>
+									<ul>
+										<li><a href="politic.html">Privacy Policy</a></li>
+										<li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+						<span class="text-12">Copyright ©  | Elheater 2025 </span>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<form role="search" method="get" id="searchform" class="search search--fixed" action="#">
+		<input class="search-field" type="search" name="s" value="" placeholder="Search">
+		<input class="search-submit" type="submit" id="searchsubmit" value="">
+	</form>
+
+	<div class="menu--mobile">
+		<div class="menu--mobile__wrapper">
+			<div class="menu--mobile__top">
+				<a href="index.html" class="logo"><img src="img/logo.svg" alt="#"></a>
+				<button class="search--button">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33317 3.33341C5.57175 3.33341 3.33317 5.57199 3.33317 8.33342C3.33317 11.0948 5.57175 13.3334 8.33317 13.3334C11.0946 13.3334 13.3332 11.0948 13.3332 8.33342C13.3332 5.57199 11.0946 3.33341 8.33317 3.33341ZM1.6665 8.33342C1.6665 4.65152 4.65127 1.66675 8.33317 1.66675C12.0151 1.66675 14.9998 4.65152 14.9998 8.33342C14.9998 12.0153 12.0151 15.0001 8.33317 15.0001C4.65127 15.0001 1.6665 12.0153 1.6665 8.33342Z" fill="#4e4e4e"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M11.9106 11.9108C12.236 11.5854 12.7637 11.5854 13.0891 11.9108L18.6784 17.5001L17.4998 18.6786L11.9106 13.0893C11.5851 12.7639 11.5851 12.2363 11.9106 11.9108Z" fill="#4e4e4e"/>
+					</svg>
+				</button>
+				<button class="menu--burger">
+					<div class="menu--burger__wrapper">
+						<span></span><span></span><span></span>
+					</div>
+				</button>
+			</div>
+			<div class="menu--mobile__bottom">
+				<div class="menu--mobile__bottom--left">
+					<ul class="menu menu--mobile__inner">
+						<li><a href="index.html">Home</a></li>
+						<li class="menu-item-has-children">
+							<a href="#">Products</a>
+							<ul class="sub-menu">
+								<li><a href="products-type.html">Sic heating elements</a></li>
+								<li><a href="products-type.html">Mosi2 heating elements</a></li>
+								<li><a href="products-type.html">Smart Watches</a></li>
+								<li><a href="products-type.html">Molybdenum&Tungsten</a></li>
+								<li><a href="products-type.html">Crucible</a></li>
+							</ul>
+						</li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="contacts.html">Contact Us</a></li>
+					</ul>
+					<ul class="social social--links">
+						<li>
+							<a href="#" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20" fill="none">
+									<path d="M8.7449 3.32002H10.6768V0.14003C9.74142 0.0453769 8.80158 -0.00135428 7.86116 2.98641e-05C5.06608 2.98641e-05 3.15474 1.66003 3.15474 4.70002V7.32002H0V10.88H3.15474V20H6.93632V10.88H10.0808L10.5535 7.32002H6.93632V5.05002C6.93632 4.00002 7.22405 3.32002 8.7449 3.32002Z" fill="#4e4e4e"></path>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+									<path d="M16.4402 3.46C16.1963 3.46 15.9579 3.53038 15.7551 3.66224C15.5523 3.79409 15.3943 3.98151 15.3009 4.20078C15.2076 4.42005 15.1832 4.66133 15.2308 4.89411C15.2784 5.12689 15.3958 5.34071 15.5683 5.50853C15.7407 5.67635 15.9604 5.79064 16.1996 5.83694C16.4388 5.88324 16.6868 5.85948 16.9121 5.76866C17.1374 5.67783 17.33 5.52402 17.4655 5.32668C17.601 5.12935 17.6733 4.89734 17.6733 4.66C17.6733 4.34174 17.5434 4.03652 17.3122 3.81147C17.0809 3.58643 16.7673 3.46 16.4402 3.46ZM21.1672 5.88C21.1472 5.0503 20.9875 4.2294 20.6945 3.45C20.4332 2.78313 20.0265 2.17928 19.5025 1.68C18.9936 1.16743 18.3717 0.774176 17.6836 0.53C16.8848 0.236161 16.0403 0.07721 15.1865 0.0599999C14.0973 -5.58794e-08 13.7479 0 10.9528 0C8.15772 0 7.80833 -5.58794e-08 6.71907 0.0599999C5.86529 0.07721 5.02079 0.236161 4.22199 0.53C3.53522 0.776649 2.91378 1.16956 2.40313 1.68C1.87641 2.17518 1.4723 2.78044 1.22139 3.45C0.919438 4.22734 0.756099 5.04915 0.738414 5.88C0.676758 6.94 0.676758 7.28 0.676758 10C0.676758 12.72 0.676758 13.06 0.738414 14.12C0.756099 14.9508 0.919438 15.7727 1.22139 16.55C1.4723 17.2196 1.87641 17.8248 2.40313 18.32C2.91378 18.8304 3.53522 19.2234 4.22199 19.47C5.02079 19.7638 5.86529 19.9228 6.71907 19.94C7.80833 20 8.15772 20 10.9528 20C13.7479 20 14.0973 20 15.1865 19.94C16.0403 19.9228 16.8848 19.7638 17.6836 19.47C18.3717 19.2258 18.9936 18.8326 19.5025 18.32C20.0288 17.8226 20.4359 17.2182 20.6945 16.55C20.9875 15.7706 21.1472 14.9497 21.1672 14.12C21.1672 13.06 21.2288 12.72 21.2288 10C21.2288 7.28 21.2288 6.94 21.1672 5.88ZM19.3175 14C19.31 14.6348 19.1919 15.2637 18.9681 15.86C18.804 16.2952 18.5405 16.6884 18.1974 17.01C17.8641 17.3405 17.4608 17.5964 17.0157 17.76C16.4029 17.9778 15.7566 18.0927 15.1043 18.1C14.0767 18.15 13.6965 18.16 10.9939 18.16C8.29131 18.16 7.91109 18.16 6.88349 18.1C6.20618 18.1123 5.53177 18.0109 4.88994 17.8C4.46428 17.6281 4.07952 17.3728 3.75957 17.05C3.4185 16.7287 3.15826 16.3352 2.99914 15.9C2.74826 15.2952 2.60911 14.6519 2.5881 14C2.5881 13 2.52645 12.63 2.52645 10C2.52645 7.37 2.52645 7 2.5881 6C2.59271 5.35106 2.71445 4.70795 2.94776 4.1C3.12867 3.67791 3.40635 3.30166 3.75957 3C4.07177 2.65617 4.45761 2.3831 4.88994 2.2C5.51631 1.98004 6.17649 1.86508 6.84238 1.86C7.86999 1.86 8.2502 1.8 10.9528 1.8C13.6554 1.8 14.0356 1.8 15.0632 1.86C15.7155 1.86728 16.3618 1.98225 16.9746 2.2C17.4415 2.36865 17.8607 2.64285 18.1974 3C18.5342 3.30718 18.7973 3.68273 18.9681 4.1C19.1965 4.70893 19.3147 5.35178 19.3175 6C19.3689 7 19.3792 7.37 19.3792 10C19.3792 12.63 19.3689 13 19.3175 14ZM10.9528 4.87C9.91061 4.87198 8.89242 5.17453 8.02686 5.73942C7.1613 6.30431 6.48722 7.1062 6.0898 8.04375C5.69238 8.98131 5.58945 10.0125 5.79402 11.0069C5.99858 12.0014 6.50146 12.9145 7.23912 13.631C7.97677 14.3474 8.9161 14.835 9.93841 15.0321C10.9607 15.2293 12.0201 15.1271 12.9828 14.7385C13.9455 14.35 14.7682 13.6924 15.347 12.849C15.9258 12.0056 16.2347 11.0142 16.2347 10C16.236 9.3251 16.1003 8.65661 15.8352 8.03296C15.5701 7.40931 15.1809 6.84281 14.6901 6.36605C14.1992 5.88929 13.6163 5.51168 12.9749 5.25493C12.3335 4.99818 11.6463 4.86736 10.9528 4.87ZM10.9528 13.33C10.276 13.33 9.61441 13.1347 9.05168 12.7688C8.48895 12.4029 8.05035 11.8828 7.79136 11.2743C7.53236 10.6659 7.46459 9.99631 7.59663 9.35035C7.72866 8.70439 8.05457 8.11104 8.53314 7.64533C9.0117 7.17963 9.62143 6.86247 10.2852 6.73398C10.949 6.6055 11.637 6.67144 12.2623 6.92348C12.8876 7.17552 13.422 7.60234 13.798 8.14995C14.174 8.69757 14.3747 9.34139 14.3747 10C14.3747 10.4373 14.2862 10.8703 14.1142 11.2743C13.9423 11.6784 13.6902 12.0454 13.3725 12.3547C13.0547 12.6639 12.6775 12.9092 12.2623 13.0765C11.8471 13.2439 11.4022 13.33 10.9528 13.33Z" fill="#4e4e4e"></path>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+									<path d="M15.2133 12.01C15.008 11.9101 13.6738 11.3109 13.4685 11.211C13.2633 11.1111 13.058 11.1111 12.8528 11.3109C12.6475 11.5106 12.237 12.1099 12.0317 12.3096C11.9291 12.5094 11.7238 12.5094 11.5185 12.4095C10.8001 12.1099 10.0817 11.7104 9.4659 11.211C8.95273 10.7116 8.43957 10.1124 8.02905 9.51311C7.92641 9.31336 8.02905 9.11361 8.13168 9.01373C8.23431 8.91386 8.33694 8.71411 8.54221 8.61423C8.64484 8.51436 8.74747 8.31461 8.74747 8.21473C8.8501 8.11486 8.8501 7.91511 8.74747 7.81523C8.64484 7.71536 8.13168 6.51685 7.92641 6.01748C7.82378 5.31835 7.61852 5.31835 7.41325 5.31835H6.90009C6.69483 5.31835 6.38693 5.5181 6.2843 5.61798C5.66851 6.21723 5.36061 6.91635 5.36061 7.71536C5.46324 8.61423 5.77114 9.51311 6.38693 10.3121C7.51588 11.9101 8.95273 13.2085 10.6975 14.0075C11.2106 14.2072 11.6212 14.407 12.1343 14.5069C12.6475 14.7066 13.1607 14.7066 13.7764 14.6067C14.4949 14.5069 15.1107 14.0075 15.5212 13.4082C15.7265 13.0087 15.7265 12.6092 15.6238 12.2097L15.2133 12.01ZM17.7791 2.92135C13.7764 -0.973783 7.31062 -0.973783 3.30797 2.92135C0.0237396 6.11735 -0.592053 11.0112 1.66585 14.9064L0.229004 20L5.66851 18.6017C7.20799 19.4007 8.8501 19.8002 10.4922 19.8002C16.137 19.8002 20.6528 15.4057 20.6528 9.91261C20.7554 7.31585 19.6265 4.81898 17.7791 2.92135ZM15.008 16.9039C13.6738 17.7029 12.1343 18.2022 10.4922 18.2022C8.95273 18.2022 7.51589 17.8027 6.18167 17.1036L5.87377 16.9039L2.69218 17.7029L3.51323 14.7066L3.30797 14.407C0.844797 10.412 2.07638 5.41823 6.07904 2.92135C10.0817 0.42447 15.2133 1.72285 17.6765 5.5181C20.1396 9.41323 19.0107 14.5069 15.008 16.9039Z" fill="#4e4e4e"></path>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="menu--mobile__bottom--right">
+					<button class="button modal--open">
+						<span>Request a quote</span>
+					</button>
+					<ul class="main--form__social">
+						<li>
+							<a href="mailto:info@elheater.com" target="_blank">
+								<div class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M0 3C0 1.34315 1.34315 0 3 0H19C20.6569 0 22 1.34315 22 3V13C22 14.6569 20.6569 16 19 16H3C1.34315 16 0 14.6569 0 13V3ZM3 2C2.44772 2 2 2.44772 2 3V13C2 13.5523 2.44772 14 3 14H19C19.5523 14 20 13.5523 20 13V3C20 2.44772 19.5523 2 19 2H3Z" fill="#FF6813"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M21.0007 2.42795L20.6902 2.72408C20.6573 2.7554 20.6224 2.78444 20.5856 2.81102L11.5856 9.31102C11.2361 9.56344 10.7641 9.56344 10.4146 9.31102L1.41461 2.81102C1.35901 2.77086 1.3077 2.7251 1.26147 2.67444L0.991211 2.37832L2.46848 1.0301L2.66921 1.25005L11.0001 7.2668L19.3594 1.22956L19.6206 0.980469L21.0007 2.42795Z" fill="#FF6813"/>
+									</svg>
+								</div>
+								<div class="link">
+									<b>Email</b>
+									<span>info@elheater.com</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="tel:+380970080700" target="_blank">
+								<div class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M4.45786 2.0472C4.39492 1.98427 4.29288 1.98427 4.22994 2.0472L2.83879 3.43835C1.99481 4.28233 1.76289 5.5613 2.25679 6.64788C4.08935 10.6795 7.32052 13.9107 11.3521 15.7432C12.4387 16.2371 13.7177 16.0052 14.5617 15.1612L15.9528 13.7701C16.0158 13.7072 16.0158 13.6051 15.9528 13.5422L14.0814 11.6708C14.0324 11.6217 13.9574 11.6095 13.8954 11.6406L12.8568 12.1599C11.5777 12.7994 10.0329 12.5487 9.02176 11.5375L6.46252 8.97827C5.45133 7.96709 5.20064 6.42229 5.84018 5.14323L6.35947 4.10466C6.39049 4.04261 6.37833 3.96767 6.32928 3.91862L4.45786 2.0472ZM2.81572 0.632991C3.65971 -0.210997 5.02809 -0.210997 5.87208 0.632991L7.74349 2.5044C8.40126 3.16218 8.56433 4.16706 8.14832 4.99908L7.62903 6.03766C7.37449 6.54674 7.47426 7.16159 7.87673 7.56406L10.436 10.1233C10.8384 10.5258 11.4533 10.6255 11.9624 10.371L13.0009 9.85171C13.833 9.4357 14.8379 9.59877 15.4956 10.2565L17.367 12.128C18.211 12.9719 18.211 14.3403 17.367 15.1843L15.9759 16.5755C14.5424 18.0089 12.3701 18.4029 10.5245 17.564C6.0527 15.5313 2.46871 11.9473 0.436058 7.47549C-0.402825 5.62995 -0.00890672 3.45762 1.42457 2.02414L2.81572 0.632991Z" fill="#FF6813"/>
+									</svg>
+								</div>
+								<div class="link">
+									<b>Phone</b>
+									<span>+380 97 008 07 00</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="https://maps.app.goo.gl/TEEHuLNFbs8bk7RZ9" target="_blank">
+								<div class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M3.73062 3.52893C2.68822 4.49664 2 5.95275 2 7.92763C2 9.21658 2.76018 10.8912 3.91015 12.6267C5.03167 14.3192 6.4086 15.9015 7.40541 16.9671C7.73561 17.32 8.26439 17.32 8.59459 16.9671C9.5914 15.9015 10.9683 14.3192 12.0898 12.6267C13.2398 10.8912 14 9.21658 14 7.92763C14 5.95275 13.3118 4.49664 12.2694 3.52893C11.2159 2.55098 9.72218 2 8 2C6.27782 2 4.78405 2.55098 3.73062 3.52893ZM2.36989 2.06319C3.84995 0.689167 5.85619 0 8 0C10.1438 0 12.15 0.689167 13.6301 2.06319C15.1212 3.44746 16 5.45517 16 7.92763C16 9.84825 14.9373 11.9503 13.757 13.7314C12.5483 15.5555 11.0877 17.2297 10.0551 18.3334C8.93451 19.5313 7.06548 19.5313 5.94488 18.3334C4.91232 17.2297 3.45167 15.5555 2.24296 13.7314C1.06271 11.9503 0 9.84825 0 7.92763C0 5.45517 0.878779 3.44746 2.36989 2.06319Z" fill="#FF6813"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M8 5C6.89543 5 6 5.89543 6 7C6 8.10457 6.89543 9 8 9C9.10457 9 10 8.10457 10 7C10 5.89543 9.10457 5 8 5ZM4 7C4 4.79086 5.79086 3 8 3C10.2091 3 12 4.79086 12 7C12 9.20914 10.2091 11 8 11C5.79086 11 4 9.20914 4 7Z" fill="#FF6813"/>
+									</svg>
+								</div>
+								<div class="link">
+									<span>Adama Branickiego 15,<br> 02-972 Warsaw</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<div>
+								<div class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2ZM0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22C4.92487 22 0 17.0751 0 11Z" fill="#FF6813"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M10.2929 11.7071C10.1054 11.5196 10 11.2652 10 11V4H12V10H18V12H11C10.7348 12 10.4804 11.8946 10.2929 11.7071Z" fill="#FF6813"/>
+									</svg>
+								</div>
+								<div class="link">
+									<span>Mon - Sat 9.00 - 18.00<br> Sunday Closed</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--general">
+		<div class="modal--wrapper">
+			<div class="modal--close">
+				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 13L13 1M1 1L13 13" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+			<div class="main--form__right">
+				<div class="h2">Request a quote</div>
+				<form action="/#wpcf7-f479-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+					<div style="display: none;">
+						<input type="hidden" name="_wpcf7" value="479">
+						<input type="hidden" name="_wpcf7_version" value="6.0">
+						<input type="hidden" name="_wpcf7_locale" value="en_US">
+						<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f479-o1">
+						<input type="hidden" name="_wpcf7_container_post" value="0">
+						<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+						<input type="hidden" name="_wpcf7_key" value="footer-form-en">
+						<input type="hidden" name="_cf7sg_toggles" value="">
+						<input type="hidden" name="_cf7sg_version" value="4.15.7">
+						<input type="hidden" name="_wpnonce" value="fc7cc9148a">
+						<input type="hidden" name="_wpcf7_lang" value="en">
+					</div>
+					<div class="main--form__block first">
+						<label>Name*</label>
+						<span class="wpcf7-form-control-wrap" data-name="fio"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name" value="" type="text" name="fio"></span>
+					</div>
+					<div class="main--form__block">
+						<label>Email*</label>
+						<span class="wpcf7-form-control-wrap" data-name="email2"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email" value="" type="email" name="email2"></span>
+					</div>
+					<div class="main--form__block">
+						<label>Phone</label>
+						<span class="wpcf7-form-control-wrap" data-name="tel2"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel" aria-invalid="false" placeholder="Your Phone" value="" type="tel" name="tel2"></span>
+					</div>
+					<div class="main--form__block">
+						<label>Message</label>
+						<span class="wpcf7-form-control-wrap" data-name="textarea2"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Your Message" name="textarea2"></textarea></span>
+					</div>
+					<div class="main--form__button">
+						<button class="button button--white wpcf7-form-control wpcf7-submit text-20" type="submit">
+							<span>Send Message</span>
+						</button>
+					</div>
+					<div class="la-sentinelle-container" style="max-height:0;overflow:hidden;">
+						<input value="58" type="text" name="la_sentinelle_c0a911d1ff64a874460aa778faf5c422" class="la_sentinelle_c0a911d1ff64a874460aa778faf5c422" id="la_sentinelle_c0a911d1ff64a874460aa778faf5c422-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="NzcuMjIyLjEyNy44MQ==" type="text" name="la_sentinelle_310e692159a1460c92f7e769ed6f8bad" class="la_sentinelle_310e692159a1460c92f7e769ed6f8bad" id="la_sentinelle_310e692159a1460c92f7e769ed6f8bad-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="58" type="text" name="la_sentinelle_8cda8c08679cbf74f388d33d6cf01df2" class="la_sentinelle_8cda8c08679cbf74f388d33d6cf01df2" id="la_sentinelle_8cda8c08679cbf74f388d33d6cf01df2-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="58" type="text" name="la_sentinelle_f7d9b6dd473594084300b1ea6d766175" class="la_sentinelle_f7d9b6dd473594084300b1ea6d766175" id="la_sentinelle_f7d9b6dd473594084300b1ea6d766175-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="" type="text" name="la_sentinelle_0617a21b2849f2ee0a58dc03e9de8a25" class="la_sentinelle_0617a21b2849f2ee0a58dc03e9de8a25" id="la_sentinelle_0617a21b2849f2ee0a58dc03e9de8a25-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="NzcuMjIyLjEyNy44MQ==" type="text" name="la_sentinelle_3c5101d0457056ecaed0159dbeca086b" class="la_sentinelle_3c5101d0457056ecaed0159dbeca086b" id="la_sentinelle_3c5101d0457056ecaed0159dbeca086b-3" placeholder="" style="transform: translateY(10000px);">
+						<input type="text" class="la_sentinelle_a2fdc8e526e3227f3c63b05252c96ae6" id="la_sentinelle_a2fdc8e526e3227f3c63b05252c96ae6-3" name="la_sentinelle_a2fdc8e526e3227f3c63b05252c96ae6" value="4eeef599d9" style="transform: translateY(10000px);">
+						<input value="" type="text" name="la_sentinelle_806bf15e61325fc9991b3bd3e5bf0b78" class="la_sentinelle_806bf15e61325fc9991b3bd3e5bf0b78" id="la_sentinelle_806bf15e61325fc9991b3bd3e5bf0b78-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="26929" type="text" name="la_sentinelle_bb1609af543c16b5fb79bde47b0fcdff" class="la_sentinelle_bb1609af543c16b5fb79bde47b0fcdff" id="la_sentinelle_bb1609af543c16b5fb79bde47b0fcdff-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="26929" type="text" name="la_sentinelle_3a0505b13a7198fc9965c9180705eb90" class="la_sentinelle_3a0505b13a7198fc9965c9180705eb90" id="la_sentinelle_3a0505b13a7198fc9965c9180705eb90-3" placeholder="" style="transform: translateY(10000px);">
+						<canvas id="canvas-2" width="20" height="20"></canvas></div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--question">
+		<div class="modal--wrapper">
+			<div class="modal--close">
+				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 13L13 1M1 1L13 13" stroke="#0F67FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+			<div class="main--form__right">
+				<div class="h2">Ask a question</div>
+				<form action="/#wpcf7-f479-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+					<div style="display: none;">
+						<input type="hidden" name="_wpcf7" value="479">
+						<input type="hidden" name="_wpcf7_version" value="6.0">
+						<input type="hidden" name="_wpcf7_locale" value="en_US">
+						<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f479-o1">
+						<input type="hidden" name="_wpcf7_container_post" value="0">
+						<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+						<input type="hidden" name="_wpcf7_key" value="footer-form-en">
+						<input type="hidden" name="_cf7sg_toggles" value="">
+						<input type="hidden" name="_cf7sg_version" value="4.15.7">
+						<input type="hidden" name="_wpnonce" value="fc7cc9148a">
+						<input type="hidden" name="_wpcf7_lang" value="en">
+					</div>
+					<div class="main--form__block first">
+						<label>Name*</label>
+						<span class="wpcf7-form-control-wrap" data-name="fio"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name" value="" type="text" name="fio"></span>
+					</div>
+					<div class="main--form__block">
+						<label>Email*</label>
+						<span class="wpcf7-form-control-wrap" data-name="email2"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email" value="" type="email" name="email2"></span>
+					</div>
+					<div class="main--form__block">
+						<label>Phone</label>
+						<span class="wpcf7-form-control-wrap" data-name="tel2"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel" aria-invalid="false" placeholder="Your Phone" value="" type="tel" name="tel2"></span>
+					</div>
+					<div class="main--form__block">
+						<label>Message</label>
+						<span class="wpcf7-form-control-wrap" data-name="textarea2"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Your Message" name="textarea2"></textarea></span>
+					</div>
+					<div class="main--form__button">
+						<button class="button button--white wpcf7-form-control wpcf7-submit text-20" type="submit">
+							<span>Send Message</span>
+						</button>
+					</div>
+					<div class="la-sentinelle-container" style="max-height:0;overflow:hidden;">
+						<input value="58" type="text" name="la_sentinelle_c0a911d1ff64a874460aa778faf5c422" class="la_sentinelle_c0a911d1ff64a874460aa778faf5c422" id="la_sentinelle_c0a911d1ff64a874460aa778faf5c422-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="NzcuMjIyLjEyNy44MQ==" type="text" name="la_sentinelle_310e692159a1460c92f7e769ed6f8bad" class="la_sentinelle_310e692159a1460c92f7e769ed6f8bad" id="la_sentinelle_310e692159a1460c92f7e769ed6f8bad-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="58" type="text" name="la_sentinelle_8cda8c08679cbf74f388d33d6cf01df2" class="la_sentinelle_8cda8c08679cbf74f388d33d6cf01df2" id="la_sentinelle_8cda8c08679cbf74f388d33d6cf01df2-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="58" type="text" name="la_sentinelle_f7d9b6dd473594084300b1ea6d766175" class="la_sentinelle_f7d9b6dd473594084300b1ea6d766175" id="la_sentinelle_f7d9b6dd473594084300b1ea6d766175-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="" type="text" name="la_sentinelle_0617a21b2849f2ee0a58dc03e9de8a25" class="la_sentinelle_0617a21b2849f2ee0a58dc03e9de8a25" id="la_sentinelle_0617a21b2849f2ee0a58dc03e9de8a25-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="NzcuMjIyLjEyNy44MQ==" type="text" name="la_sentinelle_3c5101d0457056ecaed0159dbeca086b" class="la_sentinelle_3c5101d0457056ecaed0159dbeca086b" id="la_sentinelle_3c5101d0457056ecaed0159dbeca086b-3" placeholder="" style="transform: translateY(10000px);">
+						<input type="text" class="la_sentinelle_a2fdc8e526e3227f3c63b05252c96ae6" id="la_sentinelle_a2fdc8e526e3227f3c63b05252c96ae6-3" name="la_sentinelle_a2fdc8e526e3227f3c63b05252c96ae6" value="4eeef599d9" style="transform: translateY(10000px);">
+						<input value="" type="text" name="la_sentinelle_806bf15e61325fc9991b3bd3e5bf0b78" class="la_sentinelle_806bf15e61325fc9991b3bd3e5bf0b78" id="la_sentinelle_806bf15e61325fc9991b3bd3e5bf0b78-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="26929" type="text" name="la_sentinelle_bb1609af543c16b5fb79bde47b0fcdff" class="la_sentinelle_bb1609af543c16b5fb79bde47b0fcdff" id="la_sentinelle_bb1609af543c16b5fb79bde47b0fcdff-3" placeholder="" style="transform: translateY(10000px);">
+						<input value="26929" type="text" name="la_sentinelle_3a0505b13a7198fc9965c9180705eb90" class="la_sentinelle_3a0505b13a7198fc9965c9180705eb90" id="la_sentinelle_3a0505b13a7198fc9965c9180705eb90-3" placeholder="" style="transform: translateY(10000px);">
+						<canvas id="canvas-2" width="20" height="20"></canvas></div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--send">
+		<div class="modal--wrapper">
+			<div class="modal--close">
+				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 13L13 1M1 1L13 13" stroke="#0F67FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+			<div class="modal--send__message h1">Your request has been sent, we will contact you!</div>
+		</div>
+	</div>
+
+	<div class="modal modal--error">
+		<div class="modal--wrapper">
+			<div class="modal--close">
+				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 13L13 1M1 1L13 13" stroke="#FE0F0F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+			<div class="modal--error__message h1">Error sending application!</div>
+			<div class="h2">Please try again later.</div>
+		</div>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
